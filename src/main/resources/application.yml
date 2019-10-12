@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: feign-consumer
+  cloud:
+    consul:
+      host: 172.18.0.20
+      port: 8500
+feign:
+  hystrix:
+    enabled: true
+
+logging:
+  level:
+    com.example.demo.service.HelloService: debug
